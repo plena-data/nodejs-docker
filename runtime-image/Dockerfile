@@ -1,5 +1,5 @@
-# Use the base App Engine Docker image, based on Ubuntu 16.0.4.
-FROM gcr.io/gcp-runtimes/ubuntu_16_0_4:latest
+# Use the base App Engine Docker image, based on Ubuntu 20.0.4.
+FROM gcr.io/gcp-runtimes/ubuntu_20_0_4:latest
 
 # Install updates and dependencies
 RUN apt-get update -y && \
@@ -7,6 +7,7 @@ RUN apt-get update -y && \
       apt-transport-https \
       build-essential \
       ca-certificates \
+      gnupg2 \
       curl \
       git \
       imagemagick \
